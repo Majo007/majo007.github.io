@@ -1,0 +1,682 @@
+/*Aca inicia el style del inicio, header y footer*/
+
+.ul_nav{
+    padding: 0px 5%;
+}
+
+/* .portada_inicio{
+   
+} */
+.textos_inicio{
+    padding: 2% 5%;;
+}
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+.linksContacto{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.articleLincksContacto{
+    width: 50%;
+}
+
+
+footer{    
+    background-color: #222;
+    padding: 5%;
+}
+
+
+div p a{
+    text-decoration: none;
+    color: white;
+}
+
+.mapa{
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.section_footer{
+    display: flex;
+}
+
+#habitaciones{
+    padding: 2% 5%;
+    padding-top: 0%;
+}
+
+#titulo_habitaciones{
+    padding: 2%;
+    text-align: center;
+}
+
+
+/* Style de pagina de contacto */
+body {
+    font-family: "EB Garamond", serif;
+    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233,236));
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #92a4ff;
+}
+
+h1 {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: #92a4ff;
+}
+
+/* estilo seccion reservaciones */
+
+#reservations {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#reservations h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#reservation-form,
+#guest-details-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"],
+input[type="email"],
+select,
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"],
+input[type="email"],
+select {
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos de Resultados de Disponibilidad */
+#availability-results {
+    margin-top: 20px;
+}
+
+.room-availability {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room-availability h3 {
+    margin: 0;
+}
+
+.room-availability p {
+    margin: 0 10px 0 0;
+}
+
+.room-availability button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    #reservation-form,
+    #guest-details-form {
+        flex-direction: column;
+    }
+
+    .room-availability {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .room-availability p {
+        margin-bottom: 10px;
+    }
+}
+
+/* estilo seccion de contactos */
+#contact {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1.5s ease-in-out;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1a73e8;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+    box-shadow: 0 0 10px rgba(26, 115, 232, 0.2);
+}
+
+#contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #1a73e8, #00c6ff);
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+    background: linear-gradient(45deg, #00c6ff, #1a73e8);
+    transform: translateY(-2px);
+}
+
+#contact-info {
+    margin-top: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#contact-info h3 {
+    font-size: 1.8em;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+#contact-info p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+#map iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.image {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 25%;
+    height: auto;
+}
+
+.image2 {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 25%;
+    height: auto;
+}
+
+.article {
+    float: left;
+    width: 70%;
+    background-color: #FFF;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #CCC;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-info, .footer-social, .footer-credits {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer-info h3, .footer-credits p {
+    margin: 10px 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.footer-social a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* aca finaliza style de pagina de contaccto */
+/* aca inicia style de pagina de galeria */
+
+.tituloGaleria {
+    text-align: center;
+    background-color: rgba(3, 161, 252, 0.646);
+    color: white;
+    padding: 10px;
+    font-family:  "EB Garamond", serif;
+}
+
+.galeria {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.galeria-foto {
+    text-align: center;
+}
+
+.galeria-foto img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #bfd3ff;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.galeria-foto img:hover {
+    transform: scale(1.05);
+}
+
+.galeria-foto h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: "EB Garamond", serif;
+}
+
+/* aca termina el style de pagina galeria */
+/* aca inicia el style de pagina abouts */
+
+/* PROFILE PROFILE PROFILE */
+
+.aboutus-container {
+    display: flex; 
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .estilo-audio {
+    width: 75%; /* Ajusta el ancho según tus necesidades */
+    max-width: 600px; /* Limita el ancho máximo */
+    border: none; /* Elimina los bordes predeterminados */
+    border-radius: 50px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para animaciones */
+}
+
+.estilo-audio:hover {
+    transform: scale(1.02); /* Agranda ligeramente el elemento al pasar el ratón por encima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
+                0 12px 40px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Opcional: Estilo adicional para controles personalizados */
+.estilo-audio::-webkit-media-controls-panel {
+    background-color: #333; /* Color de fondo de los controles */
+    border-radius: 10px; /* Esquinas redondeadas para los controles */
+}
+
+.estilo-audio::-webkit-media-controls-play-button,
+.estilo-audio::-webkit-media-controls-pause-button,
+.estilo-audio::-webkit-media-controls-mute-button {
+    filter: invert(100%); /* Invierte el color de los iconos para que sean visibles sobre el fondo oscuro */
+}
+
+  
+  .profile-photo {
+    border-color: #000;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 0.5px;
+  }
+  
+  .profile-photo {
+    max-width: 100%;
+    min-width: 50%;
+    object-fit: cover;
+  }
+  
+  /* BIO BIO BIO */
+  
+  .bio {
+    display: flex;
+    padding: 5.8125rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  /*   gap: calc(1.2rem + 3vw);
+   */  padding-bottom: 5.81rem;
+    text-align: center;
+  }
+  
+  .bio {
+      width: 50%;
+  }
+  
+  .bio {
+    border-color: #000;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 0.5px;
+  } 
+  
+  /* CARDS CARDS CARDS*/
+  
+  .card-container {
+      display: flex; 
+      width: 100%;
+      margin: 0 auto;
+      max-width: 100%;
+  }
+  
+  .post {
+      width: 25%;
+      margin: 10px;
+      border-color: #000;
+      border-style: solid;
+      border-width: 0.5px;
+  }
+  
+  .cardimg {
+      object-fit: cover;
+      height: 400px;
+  }
+  
+  .post:hover {
+      box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3)
+  }
+  
+  .post h2, .post p {
+      margin :1rem;
+  }
+
+
+ 
+  table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    background-color: #FFF;
+}
+
+td {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+    background-color: rgb(162, 162, 162);
+}
+
+/* servicios */
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+    padding: 0;
+    margin: 0;
+  }
+
+ header {
+    text-align: center;
+  }
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+ li {
+    float: left;
+  }
+
+ li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+ li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+ .active {
+    background-color: #04AA6D;
+  }
+
+ h1 {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: #92a4ff;
+  }
+
+ div.gallery {
+    margin: 10px;
+    border: 3px solid #ccc;
+    float: left;
+    width: 33vw;
+  }
+
+ div.galeri.centrado {
+    border: 1px solid #777;
+ }
+
+ div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+ div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+ .centrado {
+    display: flex;
+    justify-content: center;
+  }
+  table{
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+td,
+
+th {
+  border: 3px solid rgb(190,190,190);
+  padding: 20px 30px;
+
+} 
+.sectionServicios{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+
+.galeriaServicio{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    margin: 4px;
+    padding: 25px;
+    border-radius: 15px;
+    width: fit-content;
+       
+}

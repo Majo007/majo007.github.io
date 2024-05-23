@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Tulum</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/palacio/favicon-16x16.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Bienvenidos al Hotel Tulum</h1>
+      <nav>
+        <ul class="ul_nav">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/nosotros.html">Nosotros</a></li>
+          <li><a href="/servicios.html">Servicios</a></li>
+          <li><a href="/habitaciones.html">Habitaciones</a></li>
+          <li><a href="/galeria.html">Galeria</a></li>
+          <li class="active"><a href="/reserva.html">Reservas</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="reservations">
+      <h2>Reservas</h2>
+      <form id="reservation-form">
+        <label for="checkin">Fecha de entrada:</label>
+        <input type="date" id="checkin" name="checkin" required />
+
+        <label for="checkout">Fecha de salida:</label>
+        <input type="date" id="checkout" name="checkout" required />
+
+        <label for="room-type">Tipo de habitación:</label>
+        <select id="room-type" name="room-type" required>
+          <option value="standard">Estándar</option>
+          <option value="suite">Suite</option>
+          <option value="presidential">Clasica</option>
+          <option value="presidential">Superior</option>
+        </select>
+
+        <label for="guests">Número de huéspedes:</label>
+        <input
+          type="number"
+          id="guests"
+          name="guests"
+          min="1"
+          max="10"
+          required
+        />
+
+        <button type="submit">Buscar disponibilidad</button>
+      </form>
+
+      <div id="availability-results">
+        <!-- Ejemplo de resultado de disponibilidad -->
+        <div class="room-availability">
+          <h3>Suite Presidencial</h3>
+          <p>Precio: $500 por noche</p>
+          <button>Reservar</button>
+        </div>
+      </div>
+
+      <form id="guest-details-form">
+        <h3>Detalles del Huésped</h3>
+        <label for="guest-name">Nombre:</label>
+        <input type="text" id="guest-name" name="guest-name" required />
+
+        <label for="guest-email">Email:</label>
+        <input type="email" id="guest-email" name="guest-email" required />
+
+        <h3>Métodos de Pago</h3>
+        <label for="payment-method">Método de pago:</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="credit-card">Tarjeta de Crédito</option>
+          <option value="paypal">PayPal</option>
+        </select>
+
+        <button type="submit">Confirmar Reserva</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Hotel Tulum</h3>
+          <p>Dirección: Dirección: Carretera Tulum, km 5, 77780 Tulum</p>
+          <p>Teléfonos: (+594)2302463472</p>
+          <p>Email: info@hoteltulum.com</p>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-icon"
+            ><img
+              src="/assets/icons/page_contacto/img/facebook.png"
+              alt="Facebook"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="/assets/icons/page_contacto/img/x.png" alt="Twitter"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img
+              src="/assets/icons/page_contacto/img/instagram.png"
+              alt="Instagram"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img
+              src="/assets/icons/page_contacto/img/linkedin.png"
+              alt="LinkedIn"
+          /></a>
+        </div>
+        <div class="footer-credits">
+          <p>&copy; 2024 Hotel Tulum. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/script1.js"></script>
+  </body>
+</html>
